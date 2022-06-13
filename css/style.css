@@ -1,0 +1,219 @@
+body {
+  background-color: rgba(255, 0, 0, 0.308);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* navbar */
+
+.navbar-logo {
+  width: 100px;
+}
+.nav-item {
+  padding: 1rem 1rem;
+}
+.navbar-nav.active a {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.navbar-nav a:hover {
+  background-clip: var(--gradient-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: aliceblue;
+}
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.nav-item .nav-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* akhir navbar */
+/* jumbotron */
+.jumbotron {
+  padding: 2rem 1rem;
+  position: absolute;
+  color: white;
+  left: 20px;
+  bottom: 50px;
+}
+.jumbotron a {
+  background-color: coral;
+}
+.container h2 {
+  opacity: 0.5;
+}
+.container h1 {
+  opacity: 0.5;
+}
+.container p {
+  opacity: 0.5;
+}
+.container h3 {
+  opacity: 0.5;
+}
+.container a {
+  opacity: 0.5;
+  border-radius: 30px;
+  border: transparent;
+  flex-direction: column;
+  text-decoration: none;
+}
+/* penutup jumbotron */
+
+/* banner */
+.banner {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
+}
+/* penutup banner */
+
+/* about */
+.site-main .about-area {
+  padding: 20rem 6rem;
+}
+.site-main .partners {
+  padding: 20rem 6rem;
+}
+.site-main .about-image img {
+  margin: 5rem 0rem;
+  width: 30rem;
+}
+.about-title span {
+  display: block;
+  font: normal bold 49px/60px var(--roboto);
+  letter-spacing: 11px;
+}
+.button {
+  padding: 0.8rem 2.2rem;
+  font: normal 500 16px/20px var(--roboto);
+  position: relative;
+  border: 3px solid transparent;
+  border-radius: 4px;
+}
+.button.primary-button {
+  background: var(--gradient-color);
+  background-clip: padding-box;
+  color: whitesmoke;
+  transition: 0.5s ease;
+  box-shadow: var(--box-shadow);
+  border: var(--gradient-color);
+  border-radius: 5px;
+}
+.button.primary-button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+  transition: 1s ease-in-out;
+}
+.button.primary-button::after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: var(--gradient-color);
+  content: "";
+  border-radius: 4px;
+}
+:root {
+  --text-color: rgb(85, 84, 84);
+  --gradient-color: linear-gradient(90deg, #ff2a2a 0%, #4458dc 100%);
+  --box-shadow: 2px 8px 8px rgb(67, 56, 61, 0.205);
+  --primary: #065bda;
+  --dark: #000038;
+  --light: #f9fafb;
+}
+.sosial a {
+  color: var(--text-color);
+}
+
+.sosial:hover a {
+  color: var(--text-color);
+  color: rgb(173, 36, 36);
+}
+.sosial:active a {
+  color: blue;
+}
+
+/* penutup about */
+
+/* studio */
+#studio .single-brand img {
+  cursor: pointer;
+  transition: transform.4s ease;
+}
+#studio .single-brand img:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+.site-main .brand-area {
+  padding: 1rem 30rem;
+  margin-bottom: 6rem;
+}
+.site-main .brand-area .first-row .col-md-5 {
+  display: flex;
+  justify-content: center;
+}
+.site-main .brand-area .first-row .col-md-5 > .single-brand {
+  border: 1px solid var(--box-shadow);
+  cursor: pointer;
+  transition: transform.4s ease;
+  overflow: hidden;
+}
+.site-main .brand-area .first-row .col-md-5 > .single-brand:hover {
+  box-shadow: var(--box-shadow);
+  transform: scale(1.1);
+}
+
+/* akhir studio */
+.site-main .about-area .about-title p {
+  padding: 1rem 2rem;
+}
+
+.site-main .about-area .client {
+  background: #ffffff10;
+  box-shadow: var(--box-shadow);
+  margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+  padding: 2rem;
+}
+
+.site-main .about-area .client .about-client {
+  padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+  font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p {
+  font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-color);
+  width: 12px;
+  height: 12px;
+}
